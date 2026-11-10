@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Welcome back —
+            Luma
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="css/global.css" rel="stylesheet"/>
+  <link href="css/navbar.css" rel="stylesheet"/>
+  <link href="css/auth.css" rel="stylesheet"/>
+  <link href="css/responsive.css" rel="stylesheet"/>
+  <script src="js/main.js" type="module">
+  </script>
+ </head>
+ <body>
+  <header id="site-header">
+  </header>
+  <main class="auth-page">
+   <section class="auth-card">
+    <div class="auth-icon">
+     <i class="fa-regular fa-heart">
+     </i>
+    </div>
+    <span class="eyebrow">
+     YOUR LUMA ACCOUNT
+    </span>
+    <h1>
+     Welcome
+     <em>
+      back.
+     </em>
+    </h1>
+    <p class="auth-intro">
+     Sign in to pick up
+                    where you left off.
+    </p>
+    <form id="login-form">
+     <label>
+      Email
+                        address
+      <input autocomplete="email" name="email" required="" type="email"/>
+     </label>
+     <label>
+      Password
+      <span class="password-field">
+       <input autocomplete="current-password" minlength="6" name="password" required="" type="password"/>
+       <button aria-label="Show password" class="password-toggle" type="button">
+        <i class="fa-regular fa-eye">
+        </i>
+       </button>
+      </span>
+     </label>
+     <button class="button button-dark full-button">
+      Sign in
+      <i class="fa-solid fa-arrow-right">
+      </i>
+     </button>
+    </form>
+    <p class="auth-switch">
+     New around here?
+     <a href="register.html">
+      Create an account
+     </a>
+    </p>
+    <p class="demo-note">
+     <i class="fa-solid fa-circle-info">
+     </i>
+     Demo only: account details are stored in this browser and
+                    are not secure for production
+                    use.
+    </p>
+   </section>
+  </main>
+  <footer id="site-footer">
+  </footer>
+ </body>
+</html>
+

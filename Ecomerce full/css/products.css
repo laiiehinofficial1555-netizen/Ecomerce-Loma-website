@@ -1,0 +1,131 @@
+.shop-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px 0 23px;
+  border-bottom: 1px solid var(--line);
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: min(470px, 65%);
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  color: #83877f;
+}
+.search-box input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  color: var(--ink);
+  font-size: 0.8rem;
+}
+.select-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 0.74rem;
+}
+.select-label select,
+.filter-label select {
+  padding: 10px 30px 10px 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  font-size: 0.75rem;
+}
+.shop-layout {
+  display: grid;
+  grid-template-columns: 205px minmax(0, 1fr);
+  gap: 35px;
+  padding-top: 27px;
+}
+.filters {
+  align-self: start;
+  padding: 19px 17px;
+  background: var(--cream);
+}
+.filters h2 {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 22px;
+}
+.filter-label {
+  display: block;
+  margin: 18px 0;
+  color: #626960;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.filter-label select {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+}
+.price-inputs {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 9px;
+}
+.price-inputs > label {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  padding: 0 5px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 0.72rem;
+}
+.price-inputs input {
+  width: 55px;
+  min-width: 0;
+  padding: 8px 2px;
+  border: 0;
+  outline: 0;
+  font-size: 0.72rem;
+}
+.price-inputs > span {
+  font-size: 0.65rem;
+}
+.filters .text-link {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin-top: 13px;
+}
+.results-count {
+  margin: 2px 0 19px;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+.shop-results .product-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px 17px;
+}
+.shop-results .product-image {
+  height: 235px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 35px 0;
+}
+.pagination button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: #555;
+}
+.pagination button.current,
+.pagination button:hover {
+  background: var(--green-dark);
+  color: #fff;
+}

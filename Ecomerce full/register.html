@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Create account
+            — Luma
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="css/global.css" rel="stylesheet"/>
+  <link href="css/navbar.css" rel="stylesheet"/>
+  <link href="css/auth.css" rel="stylesheet"/>
+  <link href="css/responsive.css" rel="stylesheet"/>
+  <script src="js/main.js" type="module">
+  </script>
+ </head>
+ <body>
+  <header id="site-header">
+  </header>
+  <main class="auth-page">
+   <section class="auth-card">
+    <div class="auth-icon">
+     <i class="fa-regular fa-heart">
+     </i>
+    </div>
+    <span class="eyebrow">
+     A LITTLE MORE LUMA
+    </span>
+    <h1>
+     Make yourself
+     <em>
+      at home.
+     </em>
+    </h1>
+    <p class="auth-intro">
+     Create an
+                    account and keep all your lovely finds together.
+    </p>
+    <form id="register-form">
+     <label>
+      Your name
+      <input autocomplete="name" minlength="2" name="name" required=""/>
+     </label>
+     <label>
+      Email address
+      <input autocomplete="email" name="email" required="" type="email"/>
+     </label>
+     <label>
+      Password
+      <span class="password-field">
+       <input autocomplete="new-password" minlength="8" name="password" required="" type="password"/>
+       <button aria-label="Show password" class="password-toggle" type="button">
+        <i class="fa-regular fa-eye">
+        </i>
+       </button>
+      </span>
+     </label>
+     <button class="button button-dark full-button">
+      Create account
+      <i class="fa-solid fa-arrow-right">
+      </i>
+     </button>
+    </form>
+    <p class="auth-switch">
+     Already have an account?
+     <a href="login.html">
+      Sign in
+     </a>
+    </p>
+    <p class="demo-note">
+     <i class="fa-solid fa-circle-info">
+     </i>
+     Demonstration only:
+                    localStorage accounts are not secure for production
+                    use.
+    </p>
+   </section>
+  </main>
+  <footer id="site-footer">
+  </footer>
+ </body>
+</html>
+

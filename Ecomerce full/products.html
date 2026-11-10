@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Shop all —
+            Luma
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="css/global.css" rel="stylesheet"/>
+  <link href="css/navbar.css" rel="stylesheet"/>
+  <link href="css/products.css" rel="stylesheet"/>
+  <link href="css/responsive.css" rel="stylesheet"/>
+  <script src="js/main.js" type="module">
+  </script>
+ </head>
+ <body>
+  <header id="site-header">
+  </header>
+  <main class="page-main">
+   <section class="page-heading">
+    <span class="eyebrow">
+     THE LUMA
+                    EDIT
+    </span>
+    <h1>
+     Find your
+     <em>
+      lovely.
+     </em>
+    </h1>
+    <p>
+     Thoughtful
+                    everyday things, picked just for you.
+    </p>
+   </section>
+   <div class="shop-toolbar">
+    <label class="search-box">
+     <i class="fa-solid fa-magnifying-glass">
+     </i>
+     <input aria-label="Search products" id="product-search" placeholder="Search our little shop..." type="search"/>
+    </label>
+    <label class="select-label">
+     Sort by
+     <select id="sort-products">
+      <option value="popular">
+       Most
+                            loved
+      </option>
+      <option value="newest">
+       Newest
+      </option>
+      <option value="low">
+       Price: low to high
+      </option>
+      <option value="high">
+       Price: high to
+                            low
+      </option>
+     </select>
+    </label>
+   </div>
+   <div class="shop-layout">
+    <aside class="filters">
+     <h2>
+      Find your
+                        fit
+     </h2>
+     <label class="filter-label">
+      Category
+      <select id="filter-category">
+       <option value="">
+        All
+                                categories
+       </option>
+      </select>
+     </label>
+     <div class="filter-label">
+      Price range
+      <div class="price-inputs">
+       <label>
+        $
+        <input id="min-price" min="0" placeholder="0" type="number"/>
+       </label>
+       <span>
+        to
+       </span>
+       <label>
+        $
+        <input id="max-price" min="0" placeholder="500" type="number"/>
+       </label>
+      </div>
+     </div>
+     <button class="text-link" id="clear-filters">
+      Clear
+                        filters
+     </button>
+    </aside>
+    <section class="shop-results">
+     <p class="results-count" id="results-count">
+     </p>
+     <div class="product-grid" id="product-list">
+     </div>
+     <nav aria-label="Product pages" class="pagination" id="pagination">
+     </nav>
+    </section>
+   </div>
+  </main>
+  <footer id="site-footer">
+  </footer>
+ </body>
+</html>
+

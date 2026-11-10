@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Contact —
+            Luma
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="css/global.css" rel="stylesheet"/>
+  <link href="css/navbar.css" rel="stylesheet"/>
+  <link href="css/auth.css" rel="stylesheet"/>
+  <link href="css/responsive.css" rel="stylesheet"/>
+  <script src="js/main.js" type="module">
+  </script>
+ </head>
+ <body>
+  <header id="site-header">
+  </header>
+  <main class="page-main">
+   <section class="page-heading">
+    <span class="eyebrow">
+     WE’RE RIGHT
+                    HERE
+    </span>
+    <h1>
+     Say
+     <em>
+      hello.
+     </em>
+    </h1>
+    <p>
+     Questions, a kind
+                    thought, or help with an order—we’d love to hear from
+                    you.
+    </p>
+   </section>
+   <div class="contact-layout">
+    <section class="contact-details">
+     <h2>
+      Good things start with a
+                        conversation.
+     </h2>
+     <p>
+      Our small team is here Monday to
+                        Friday, 9am–5pm. We usually reply within one business
+                        day.
+     </p>
+     <a href="mailto:hello@lumagoods.example">
+      <i class="fa-regular fa-envelope">
+      </i>
+      hello@lumagoods.example
+     </a>
+     <p>
+      <i class="fa-regular fa-clock">
+      </i>
+      Monday–Friday,
+                        9am–5pm
+     </p>
+     <p class="demo-note">
+      This is a demo
+                        storefront; messages are not transmitted to a live
+                        support team.
+     </p>
+    </section>
+    <form class="contact-form" id="contact-form">
+     <label>
+      Your name
+      <input name="name" required=""/>
+     </label>
+     <label>
+      Email address
+      <input name="email" required="" type="email"/>
+     </label>
+     <label>
+      What can we help
+                        with?
+      <select name="topic" required="">
+       <option value="">
+        Choose
+                                a topic
+       </option>
+       <option>
+        Order
+                                question
+       </option>
+       <option>
+        Product
+                                question
+       </option>
+       <option>
+        Something
+                                else
+       </option>
+      </select>
+     </label>
+     <label>
+      Your
+                        message
+      <textarea minlength="10" name="message" required="" rows="5"></textarea>
+     </label>
+     <button class="button button-dark">
+      Send a little note
+      <i class="fa-solid fa-arrow-right">
+      </i>
+     </button>
+    </form>
+   </div>
+  </main>
+  <footer id="site-footer">
+  </footer>
+  <script type="module">
+   import { toast } from "./js/utils.js"; document.querySelector("#contact-form").addEventListener("submit", event => { event.preventDefault(); if (!event.currentTarget.reportValidity()) return; toast("Thanks for your note. This demo does not send messages."); event.currentTarget.reset(); });
+  </script>
+ </body>
+</html>
+

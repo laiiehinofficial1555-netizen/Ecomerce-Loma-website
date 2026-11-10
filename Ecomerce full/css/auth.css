@@ -1,0 +1,130 @@
+.auth-page {
+  min-height: 610px;
+  padding: 58px 18px 75px;
+  background: linear-gradient(180deg, #f7f6f1 0, #fff 100%);
+}
+.auth-card {
+  width: min(100%, 460px);
+  margin: 0 auto;
+  padding: 42px 44px;
+  background: #fff;
+  box-shadow: 0 12px 45px #263b2b0d;
+  text-align: center;
+}
+.auth-icon {
+  display: grid;
+  place-items: center;
+  width: 47px;
+  height: 47px;
+  margin: 0 auto 17px;
+  border-radius: 50%;
+  background: var(--sage);
+  color: var(--green-dark);
+}
+.auth-card h1 {
+  margin: 10px 0;
+  font-size: 2.6rem;
+}
+.auth-intro {
+  margin-bottom: 25px;
+  color: var(--muted);
+  font-size: 0.79rem;
+}
+.auth-card form,
+.contact-form {
+  display: grid;
+  gap: 15px;
+  text-align: left;
+}
+.auth-card form > label {
+  display: grid;
+  gap: 7px;
+  color: #535b52;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+.auth-card input {
+  width: 100%;
+  height: 44px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  outline-color: var(--green);
+  font-size: 0.78rem;
+}
+.password-field {
+  position: relative;
+}
+.password-field input {
+  padding-right: 42px;
+}
+.password-toggle {
+  position: absolute;
+  right: 7px;
+  top: 6px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  background: transparent;
+  color: #7a8178;
+}
+.auth-card .full-button {
+  margin-top: 4px;
+}
+.auth-switch {
+  margin: 20px 0 0;
+  color: #727970;
+  font-size: 0.74rem;
+}
+.auth-switch a {
+  color: var(--green-dark);
+  font-weight: 700;
+  text-decoration: underline;
+}
+.demo-note {
+  margin: 23px 0 0;
+  padding: 12px;
+  background: #faf7ef;
+  text-align: left;
+  color: #8b7352;
+  font-size: 0.63rem;
+  line-height: 1.5;
+}
+.contact-layout {
+  max-width: 960px;
+  margin: 0 auto 40px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 9%;
+  align-items: start;
+}
+.contact-details h2 {
+  font-size: 2rem;
+}
+.contact-details > p {
+  color: var(--muted);
+  font-size: 0.81rem;
+}
+.contact-details > a,
+.contact-details > p:not(:first-of-type) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 19px;
+  color: var(--green-dark);
+  font-size: 0.8rem;
+}
+.contact-details .demo-note {
+  display: block;
+  color: #8b7352;
+}
+.contact-form {
+  padding: 28px;
+  background: var(--cream);
+}
+.contact-form textarea {
+  resize: vertical;
+}
+.contact-form .button {
+  justify-self: start;
+  margin-top: 5px;
+}
